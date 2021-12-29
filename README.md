@@ -21,10 +21,11 @@ __管理员用户功能：__
 ## 使用技术
 <ul>IDE：Eclipse</ul>
 <ul>数据库：MySQL</ul>
-<ul>数据源：</ul>
+<ul>数据源：DataSets from <a href="https://www.kaggle.com/datasets">Kaggle</a></ul>
 <ul>JDBC 工具：</ul>
 <ul>前端框架：</ul>
 <ul>Ajax 解决方案：</ul>
+<ul>HTML template by <a href="https://html5up.net">HTML5UP</a></ul>
 
 </div>
 
