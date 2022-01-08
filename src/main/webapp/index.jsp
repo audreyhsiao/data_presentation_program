@@ -27,7 +27,7 @@
 </head>
 
 <body class="is-preload">
-	
+	<h2>歡迎<%=session.getAttribute("uname") %>登錄！</h2>
 	
     <!-- Wrapper -->
     <div id="wrapper">
