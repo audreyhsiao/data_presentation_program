@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -10,13 +13,22 @@
 
 <head>
     <title>Presentation Name</title>
+    <!--引入echart.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
+    <!-- 引入jquery.js -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.js" 
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
+    crossorigin="anonymous"></script>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
-
+	
+	
     <!-- Wrapper -->
     <div id="wrapper">
 
@@ -36,16 +48,17 @@
                 <!-- Banner -->
                 <section id="banner">
                     <div class="content">
-                        <!--todo 介绍图-->
-                        <span class="image object">
-							<img src="images/pic10.jpg" alt="" />
-						</span>
+       
+        
+                    </div>
+                    
+                                <!--todo 介绍图-->
+                     
                         <div>
                             <h1>Hi, I’m Editorial<br /> by HTML5 UP</h1>
                             <p>A free and fully responsive site template</p>
 
-                            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia.
-                                Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+                            <p>要求Web系统能够实现指标的增加、删除、修改（包括一级指标、二级指标、三级指标），其中在“Java指标体系&数据.xlsx”中标红的部分要求在数据库中一定包含，其他未标红的部分为机动部分，即提供这些数据让你们做增、删、改之用。</p>
                             <div class="features">
                                 <article>
                                     <span class="icon solid fa-rocket"></span>
@@ -101,9 +114,9 @@
                             <li><a href="map.html">依照地圖查詢</a></li>
                             <li><a href="nationSearch.html">依照國家查詢</a></li>
                             <li>
-                                <span class="opener">Submenu</span>
+                                <span class="opener">sql</span>
                                 <ul>
-                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="sql.jsp">sql</a></li>
                                     <li><a href="#">Ipsum Adipiscing</a></li>
                                     <li><a href="#">Tempus Magna</a></li>
                                     <li><a href="#">Feugiat Veroeros</a></li>
