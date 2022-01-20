@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-<generatorConfiguration>
-  <context id="context1">
-    <jdbcConnection connectionURL="???" driverClass="???" password="" userId="root" />
-    <javaModelGenerator targetPackage="???" targetProject="???" />
-    <javaClientGenerator targetPackage="???" targetProject="???" type="XMLMAPPER" />
-    <table schema="???" tableName="???">
-      <columnOverride column="???" property="???" />
-    </table>
-    
-    
-    
-    
-    
-    
-    
-  </context>
-</generatorConfiguration>
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <!-- 數據庫連接,由mybatis管理-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/Nation?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC" />
+                <property name="username" value="root" />
+                <property name="password" value="" />
+            </dataSource>
+        </environment>
+    </environments>
+	<!-- tb_userinfo 資料表配置 -->
+    <mappers>
+    	<mapper resource="config/NationMapper.xml"/>
+    </mappers>
+</configuration>

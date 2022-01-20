@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="java.sql.*"%>
+     <%@ include file="conn.jsp"%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -36,7 +38,9 @@
                    -->  <h1>国家数据展示</h1>
                     <p>用户账号/密码：<br />
                         admin / admin</p>
-                    
+                  
+                
+                   
                 </div>
             </div>
         </div>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD MApper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.NationMapper">
+<select id="queryNationByName" parameterType="string" resultType="com.entity.Nation">
+	select * from Nation where Cname = #{Cname};
+</select>
+
+<insert id="insert1" parameterType="com.entity.Nation">
+		insert into Nation(Cno,Cname)values(#{Cno},#{Cname});
+	</insert>
+
+<update id="update1" parameterType="com.entity.Nation">
+		update Nation set Cname= #{Cname} WHERE Cno =#{Cno}
+	</update>
+	
+	<delete id="delete1" parameterType="string">
+		delete FROM Nation WHERE Cname =#{Cname}
+	</delete>
+	
+	
+
+</mapper>
+
+

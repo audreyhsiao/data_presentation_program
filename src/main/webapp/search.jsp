@@ -2,15 +2,10 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ include file="conn.jsp" %>
 
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-
 <head>
     <title>search</title>
     <!--引入echart.js  -->
@@ -22,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+<body >
 
-<body class="is-preload">
 	
     <!-- Wrapper -->
     <div id="wrapper">
@@ -43,27 +38,20 @@
 
                 <!-- Banner -->
                 <section id="banner">
-                    
-                    
-                                <!--todo 介绍图-->
-                     
+
                         <div>
                             <h1>数据库搜索</h1>
                             </div>
-
-                          
-
                 </section>
 
                
-			<div style="mergin:10px;">
-			<form action="" method="post" id="nationSearch">
-                          <input type="text" name="nationName" id="nationName" placeholder="国家名" style="width:250px; display:inline;"/> <button type="button" id="nationBtn">搜索</button>
+			<div >
+			
+						<form method="post" action="search_nation.jsp" > 
+                          <input type="text" name="Cname" id="
+                          nationName" placeholder="国家名" style="width:250px; display:inline; margin:10px"/> 
                           <span id="msg1" ></span>
-                          </form>
                           <script>
-                         
-                          
                           
                           function isEmpty(str){
                         	  if(str == nul || str.trim() == ""){
@@ -71,8 +59,7 @@
                         	  }
                         	  return false;
                           }
-                          
-                          
+                  
                           ${"nationBtn"}.click(function(){
                         	  var cname = ${"nationName"}.val();
                         	  if(isEmpty(cname)){
@@ -84,23 +71,29 @@
                           })
                         
                           </script>
+
                           
-                          
-                          </div><div style="mergin-buttom:10px;">
-                          <input type="text" name="username" placeholder="数据名" style="width:250px; display:inline;"/> <button>搜索</button>
-                          </div><div>
-                          <input type="text" name="username" placeholder="年份" style="width:250px; display:inline;"
-                          /> <button>搜索</button>
-                         </div>
-                         
-                         
-                        <form action="ServletFindNationData" method="post" id="frm"></form>
+                          <input type="text" name="name" placeholder="数据名" style="width:250px; display:inline;margin:10px"/> 
                         
                        
+                          <input type="text" name="year" placeholder="年份" style="width:250px; display:inline;margin:10px"/>
+                       
+                          <span id="msg3" ></span>
+                          
+                           <input type="text" name="Cname2" id="nationName" placeholder="国家名2" style="width:250px; display:inline;margin:10px"/> 
+                           
+                           
+                       <div>
+                        <button type="submit" style="margin:10px">搜索</button>
+						</div>
+	                   </form>
+         </div>  
+                  <!--   <button type="">交叉搜索</button>    -->
                         
                         
-                </div>
-         <div style="margin:20px 50px; "> <button>修改数据</button></div>
+</div>
+         <div style="margin:20px 50px; "> <a href="edit.jsp"><button style=" background-color:#f56a6a; color:#fff !important;">修改国家数据</button></a></div>
+         <div style="margin:20px 50px; display:inline; "> <a href="edit.jsp"><button style=" background-color:#f56a6a; color:#fff !important;">修改数据信息</button></a></div>
         
             </div>
 
@@ -124,7 +117,8 @@
                             <li><a href="index.jsp">Homepage</a></li>
                            
                             <li><a href="map.jsp">数据可视化</a></li>
-                              <li><a href="serch.jsp">数据查詢</a></li>
+                              <li><a href="search.jsp">数据查詢</a></li>
+                            
                             
                             <li>
                                 <a href="#">管理員登入</a>
