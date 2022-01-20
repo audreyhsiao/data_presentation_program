@@ -12,7 +12,7 @@
 <html>
 
 <head>
-    <title>Presentation Name</title>
+    <title>chart</title>
     <!--引入echart.js  -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
     <!-- 引入jquery.js -->
@@ -27,7 +27,7 @@
 </head>
 
 <body class="is-preload">
-	<!-- <h2>歡迎<%=session.getAttribute("uname") %>登錄！</h2> -->
+	
 	
     <!-- Wrapper -->
     <div id="wrapper">
@@ -38,7 +38,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>Java数据库展示作业</strong> by xyz</a>
+                    <a href="index.html" class="logo"><strong>Java数据库展示作业</strong> by HTML5 UP</a>
                     <ul class="icons">
                         <!--TODO Github-->
                         <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
@@ -47,18 +47,15 @@
 
                 <!-- Banner -->
                 <section id="banner">
-                    <div class="content">
-       
-        
-                    </div>
+                    
                     
                                 <!--todo 介绍图-->
                      
                         <div>
-                            <h1>Java Web<br /> </h1>
-                            <p>PKU 2021 fall semester Java course</p>
+                            <h1>地图显示</h1>
+                            
 
-                            <p>要求Web系统能够实现指标的增加、删除、修改（包括一级指标、二级指标、三级指标），其中在“Java指标体系&数据.xlsx”中标红的部分要求在数据库中一定包含，其他未标红的部分为机动部分，即提供这些数据让你们做增、删、改之用。</p>
+                            
                             <div class="features">
                                 <article>
                                     <span class="icon solid fa-rocket"></span>
@@ -66,21 +63,11 @@
                                         <h3>動態地圖展示</h3>
                                      
                                         <ul class="actions">
-                                            <li><a href="chart.jsp" class="button big">开始</a></li>
+                                            <li><a href="map.html" class="button big">开始</a></li>
                                         </ul>
                                     </div>
                                 </article>
-                                <article>
-                                    <span class="icon solid fa-signal"></span>
-                                    <div class="content">
-                                    
-                                        <h3>数据库查詢</h3>
-                                       
-                                        <ul class="actions">
-                                            <li><a href="search.jsp" class="button big">开始</a></li>
-                                        </ul>
-                                    </div>
-                                </article>
+                                
                             </div>
 
                         </div>
@@ -117,7 +104,7 @@
                               <li><a href="serch.jsp">数据查詢</a></li>
                             
                             <li>
-                                <a href="login.jsp">管理員登入</a>
+                                <a href="#">管理員登入</a>
 
                             </li>
                         </ul>
@@ -129,14 +116,13 @@
                     <!-- Section -->
                     <section>
                         <header class="major ">
-                            <h2>小组成员</h2>
+                            <h2>Get in touch</h2>
                         </header>
-                   
+                        <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="contact ">
-                            <li >1900017470 萧又筑</li>
-                            <li  >2000016618 周韋翰</li>
-                            <li  >2000093020 李家愿</li>
-                            
+                            <li class="icon solid fa-envelope "><a href="# ">information@untitled.tld</a></li>
+                            <li class="icon solid fa-phone ">(000) 000-0000</li>
+                            <li class="icon solid fa-home ">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
                         </ul>
                     </section>
 

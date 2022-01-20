@@ -12,14 +12,11 @@
 <html>
 
 <head>
-    <title>Presentation Name</title>
+    <title>search</title>
     <!--引入echart.js  -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
     <!-- 引入jquery.js -->
-    
-    <script src="https://code.jquery.com/jquery-2.2.4.js" 
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
-    crossorigin="anonymous"></script>
+    <script src="assets/js/"></script>
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -27,7 +24,6 @@
 </head>
 
 <body class="is-preload">
-	<!-- <h2>歡迎<%=session.getAttribute("uname") %>登錄！</h2> -->
 	
     <!-- Wrapper -->
     <div id="wrapper">
@@ -38,7 +34,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>Java数据库展示作业</strong> by xyz</a>
+                    <a href="index.html" class="logo"><strong>Java数据库展示作业</strong> by HTML5 UP</a>
                     <ul class="icons">
                         <!--TODO Github-->
                         <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
@@ -47,51 +43,65 @@
 
                 <!-- Banner -->
                 <section id="banner">
-                    <div class="content">
-       
-        
-                    </div>
+                    
                     
                                 <!--todo 介绍图-->
                      
                         <div>
-                            <h1>Java Web<br /> </h1>
-                            <p>PKU 2021 fall semester Java course</p>
-
-                            <p>要求Web系统能够实现指标的增加、删除、修改（包括一级指标、二级指标、三级指标），其中在“Java指标体系&数据.xlsx”中标红的部分要求在数据库中一定包含，其他未标红的部分为机动部分，即提供这些数据让你们做增、删、改之用。</p>
-                            <div class="features">
-                                <article>
-                                    <span class="icon solid fa-rocket"></span>
-                                    <div class="content">
-                                        <h3>動態地圖展示</h3>
-                                     
-                                        <ul class="actions">
-                                            <li><a href="chart.jsp" class="button big">开始</a></li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article>
-                                    <span class="icon solid fa-signal"></span>
-                                    <div class="content">
-                                    
-                                        <h3>数据库查詢</h3>
-                                       
-                                        <ul class="actions">
-                                            <li><a href="search.jsp" class="button big">开始</a></li>
-                                        </ul>
-                                    </div>
-                                </article>
+                            <h1>数据库搜索</h1>
                             </div>
 
-                        </div>
-
-
+                          
 
                 </section>
 
-                <!-- Section -->
-
+               
+			<div style="mergin:10px;">
+			<form action="" method="post" id="nationSearch">
+                          <input type="text" name="nationName" id="nationName" placeholder="国家名" style="width:250px; display:inline;"/> <button type="button" id="nationBtn">搜索</button>
+                          <span id="msg1" ></span>
+                          </form>
+                          <script>
+                         
+                          
+                          
+                          function isEmpty(str){
+                        	  if(str == nul || str.trim() == ""){
+                        		  return true;
+                        	  }
+                        	  return false;
+                          }
+                          
+                          
+                          ${"nationBtn"}.click(function(){
+                        	  var cname = ${"nationName"}.val();
+                        	  if(isEmpty(cname)){
+                        		  //return html
+                        		  ${"msg1"}.html("搜寻内容不可为空");
+                        	  return;
+                        		  }
+                        	
+                          })
+                        
+                          </script>
+                          
+                          
+                          </div><div style="mergin-buttom:10px;">
+                          <input type="text" name="username" placeholder="数据名" style="width:250px; display:inline;"/> <button>搜索</button>
+                          </div><div>
+                          <input type="text" name="username" placeholder="年份" style="width:250px; display:inline;"
+                          /> <button>搜索</button>
+                         </div>
+                         
+                         
+                        <form action="ServletFindNationData" method="post" id="frm"></form>
+                        
+                       
+                        
+                        
                 </div>
+         <div style="margin:20px 50px; "> <button>修改数据</button></div>
+        
             </div>
 
             <!-- Sidebar -->
@@ -113,11 +123,11 @@
                         <ul>
                             <li><a href="index.jsp">Homepage</a></li>
                            
-                            <li><a href="chart.jsp">数据可视化</a></li>
+                            <li><a href="map.jsp">数据可视化</a></li>
                               <li><a href="serch.jsp">数据查詢</a></li>
                             
                             <li>
-                                <a href="login.jsp">管理員登入</a>
+                                <a href="#">管理員登入</a>
 
                             </li>
                         </ul>
@@ -129,14 +139,13 @@
                     <!-- Section -->
                     <section>
                         <header class="major ">
-                            <h2>小组成员</h2>
+                            <h2>Get in touch</h2>
                         </header>
-                   
+                        <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="contact ">
-                            <li >1900017470 萧又筑</li>
-                            <li  >2000016618 周韋翰</li>
-                            <li  >2000093020 李家愿</li>
-                            
+                            <li class="icon solid fa-envelope "><a href="# ">information@untitled.tld</a></li>
+                            <li class="icon solid fa-phone ">(000) 000-0000</li>
+                            <li class="icon solid fa-home ">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
                         </ul>
                     </section>
 
