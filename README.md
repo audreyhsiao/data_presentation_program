@@ -18,14 +18,23 @@ __管理员用户功能：__
 <li>数据的增删改</li>
 <br>
 
-## 使用技术
+## Develop Tool使用技术
 <ul>IDE：Eclipse</ul>
-<ul>数据库：MySQL</ul>
+<ul>DataBase：MySQL</ul>
 <ul>数据源：DataSets from <a href="https://www.kaggle.com/datasets">Kaggle</a></ul>
-<ul>JDBC 工具：</ul>
-<ul>前端框架：</ul>
-<ul>Ajax 解决方案：</ul>
+<ul>Back-end：Tomcat5.0 + Java Servlet</ul>
+<ul>Front-End：jsp+HTML+CSS(Tailwind framework)</ul>
+<ul>Data Visulization:Echart.js Chart.js</ul>
 <ul>HTML template by <a href="https://html5up.net">HTML5UP</a></ul>
+
+## Some data visualiztion example on the webpage:
+<img width="356" alt="image" src="https://github.com/audreyhsiao/data_presentation_program/assets/51323445/763e89aa-c73a-47ba-bf22-a6012aac04a0">
+
+## Examples for the SQL searching
+- get data from 2019,2020,2021 of the target country
+<img width="456" alt="image" src="https://github.com/audreyhsiao/data_presentation_program/assets/51323445/519be740-14b5-4b57-9ca2-8c1415b77a2b">
+
+
 
 </div>
 
