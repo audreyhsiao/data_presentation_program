@@ -1,4 +1,4 @@
-# A Java program which needs a fancy name
+# Database Searching Interface with Java, JS and SQL
 *This is a presentation program for java course in Peking University.*
  
 
